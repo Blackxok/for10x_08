@@ -1,6 +1,10 @@
 :root {
-    rang1: #27b78e,
+    --main-color: #1C1E53;
+    --oq-color: #ffffff;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 
 * {
     padding: 0;
@@ -8,26 +12,78 @@
     box-sizing: border-box;
 }
 
+.home {
+    background-color: var(--main-color);
+}
+
 .navbar {
-    border: 1px solid red;
+    background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    border: 1px solid rgb(78, 204, 28);
     flex: 0 1 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
 .menus {
-    border: 1px solid rgb(215, 215, 25);
     flex: 0 1 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 25px 160px;
+}
+
+.menus .menu {
+    color: #BBBBCB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    border: 1px solid #00000000;
+    padding: 5px 10px;
+}
+
+.menus .menu:hover {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.home_body {
+    padding: 125px;
+    display: flex;
+}
+
+.txt {
+    flex: 0 0 50%;
+    padding: 40px;
+}
+
+.illu {
+    flex: 0 0 50%;
+}
+
+.txt_h1 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 74px;
+}
+
+.illu iframe {
+    width: 100%;
+    height: 100%;
 }
