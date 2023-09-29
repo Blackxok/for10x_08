@@ -157,9 +157,9 @@
 .txt_container {
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
-    margin: 130px;
+    margin: 100px 130px;
 }
 
 .work_txt_a {
@@ -193,16 +193,19 @@
 }
 
 .boxes_container {
+    margin: 100px 50px;
+    max-width: 700px;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     flex-wrap: wrap;
 }
 
-.b1 {
+.b1,
+.b2,
+.b3,
+.b4 {
+    margin: 20px;
     width: 300px;
     height: 150px;
-    background: #d4cece;
 }
 
 .b_title {
@@ -224,8 +227,15 @@
 }
 
 .b_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Grey);
     width: 50px;
     height: 50px;
-    background: red;
-    background-image: url("../imgs/icon_num.png");
+    background-position: center;
+    background-size: 50px 50px;
+    background-image: url("../imgs/icon_num2.png");
+    background-repeat: no-repeat;
 }
