@@ -5,6 +5,7 @@
     --yellow-color: #FCD980;
     --mokri-color: #BBBBCB;
     --size: calc(1vw + 1vh);
+    --Grey: #F4F6FC;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -137,15 +138,20 @@
 .work {
     width: 100%;
     max-height: 660px;
-    background: red;
+    background: var(--Grey);
     display: flex;
 }
 
 .work_txt {
-    background: green;
     flex: 0 0 40%;
     display: flex;
     justify-content: start;
+}
+
+.strelka_icon {
+    margin: 0 0 0 10px;
+    width: 20px;
+    height: 20px;
 }
 
 .txt_container {
@@ -154,6 +160,12 @@
     justify-content: center;
     flex-direction: column;
     margin: 130px;
+}
+
+.work_txt_a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: flex;
 }
 
 .work_txt_h1 {
@@ -176,7 +188,6 @@
 
 
 .work_boxes {
-    background: yellow;
     flex: 0 0 60%;
     display: flex;
 }
@@ -210,4 +221,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+}
+
+.b_icon {
+    width: 50px;
+    height: 50px;
+    background: red;
+    background-image: url("../imgs/icon_num.png");
 }
